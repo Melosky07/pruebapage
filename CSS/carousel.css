@@ -1,0 +1,53 @@
+.carousel {
+  padding: 25px;
+}
+
+.carousel-contenedor {
+  position: relative;
+}
+
+.corousel-izq,
+.corousel-der {
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: none;
+  top: calc(50% - 30px);
+  cursor: pointer;
+  line-height: 30px;
+  text-align: center;
+  background: none;
+  color: #fff;
+  opacity: 70%;
+}
+
+.corousel-izq:hover,
+.corousel-der:hover {
+  opacity: 100%;
+}
+
+.corousel-izq {
+  left: -30px;
+}
+
+.corousel-der {
+  right: -30px;
+}
+
+.carousel-indicador .glider-dot {
+  display: block;
+  width: 30px;
+  height: 4px;
+  background: #fff;
+  opacity: 0.2;
+  border-radius: 0;
+}
+
+.carousel-indicador .glider-dot:hover {
+  opacity: 0.5;
+}
+
+.carousel-indicador .glider-dot.active {
+  opacity: 1;
+}
